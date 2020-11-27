@@ -1,0 +1,81 @@
+{
+    "macros": [ "MBED_HEAP_STATS_ENABLED=0",
+                "MBED_STACK_STATS_ENABLED=0",
+                "MBED_MEM_TRACING_ENABLED=0",
+                "OS_THREAD_LIBSPACE_NUM=5",
+                "MBEDTLS_USER_CONFIG_FILE=\"mbedtls_entropy_config.h\""
+                ],
+    "config": {
+        "main-stack-size": {
+            "help": "Specifies stack size of the main thread",
+            "value": 8192
+        },
+        "use-wifi": {
+            "help": "If true, use WiFi; otherwise use Ethernet",
+            "value": true
+        },
+        "esp32-en": {
+            "help": "EN pin for ESP32 WiFi driver",
+            "value": "PC_8"    
+        },
+        "use-tls": {
+            "help": "If true, use TLS",
+            "value": true
+        },
+        "wifi-tx": {
+            "help": "TX pin to WiFi module",
+            "value": "PC_6"   
+        },
+        "wifi-rx": {
+            "help": "RX pin to WiFi module",
+            "value": "PC_7"   
+        },
+        "wifi-security": {
+            "help": "WiFi network security (enums from nsapi_security_t)",
+            "value": "NSAPI_SECURITY_WPA_WPA2"
+        },
+        "decada-api-url": {
+            "help": "Root URL to access the APIs of DECADAcloud",
+            "value": "\"https://ag.decada.gov.sg\""
+        },
+        "decada-ou-id": {
+            "help": "Organization Unit ID issued for connecting to DECADAcloud",
+            "value": "\"enter-organization-unit-id\""
+        },
+        "decada-access-key": {
+            "help": "Access key issued for connecting to DECADAcloud application",
+            "value": "\"enter-access-key\""
+        },
+        "decada-access-secret": {
+            "help": "Access secret issued for connecting to DECADAcloud application",
+            "value": "\"enter-access-secret\""
+        },
+        "decada-product-key": {
+            "help": "Product key issued for connecting to DECADAcloud product",
+            "value": "\"enter-product-key\""
+        },
+        "decada-product-secret": {
+            "help": "Product secret issued for connecting to DECADAcloud product",
+            "value": "\"enter-product-secret\""
+        }
+    },
+    "target_overrides": {
+        "*": {
+            "target.features_add"                       : ["NANOSTACK", "STORAGE"],
+            "target.components_add"                     : ["FLASHIAP"],
+            "storage.storage_type"                      : "TDB_INTERNAL",
+            "mbed-trace.enable"                         : 1,
+            "mbed-trace.max-level"                      : "TRACE_LEVEL_INFO",
+            "platform.stdio-baud-rate"                  : 115200,
+            "platform.stdio-convert-newlines"           : true,
+            "platform.error-reboot-max"                 : 1000,
+            "platform.fatal-error-auto-reboot-enabled"  : true,
+            "target.OUTPUT_EXT"                         : "bin"
+        },
+        "NUCLEO_F767ZI": {
+            "target.macros_add"                         : ["DEVICE_UID_ADDR=0x1FF0F420"],
+            "storage_tdb_internal.internal_base_address": "0x08180000",
+            "storage_tdb_internal.internal_size"        : "(512*1024)"
+        }
+    }
+}

@@ -1,0 +1,6 @@
+projectKey=manuca-os
+serverUrl=https://sonarqube.siotgov.tech
+serverVersion=7.9.0.26994
+dashboardUrl=https://sonarqube.siotgov.tech/dashboard?id=manuca-os
+ceTaskId=AW2lmfxDI1F1OK4i3VOE
+ceTaskUrl=https://sonarqube.siotgov.tech/api/ce/task?id=AW2lmfxDI1F1OK4i3VOE
