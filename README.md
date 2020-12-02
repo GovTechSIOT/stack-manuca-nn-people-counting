@@ -1,3 +1,5 @@
+<a href="https://govtechsiot.github.io/stack-manuca-nn-people-counting/"><img src="https://codedocs.xyz/doxygen/doxygen.svg"/></a>
+
 ## Introduction
 `stack-manuca-nn-people-counting` is a computer vision application written using the MANUCA OS tech stack. It uses an external camera module to capture images, performs machine-learning-based inference to count the number of people in the image, and then publishes the counts to the government-supported DECADA Cloud service. It is written in C++ for efficiency and is suitable for deployment on edge devices. 
 
