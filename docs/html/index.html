@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MANUCA OS: Main Page</title>
+<title>stack-manuca-nn-people-counting: Introduction</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,8 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="manuca_os_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">MANUCA OS
+   <div id="projectname">stack-manuca-nn-people-counting
    </div>
   </td>
  </tr>
@@ -63,42 +62,104 @@ $(function() {
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">MANUCA OS Documentation</div>  </div>
+<div class="title">Introduction </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_README"></a></p><div align="center"> <img src="https://raw.githubusercontent.com/GovTechSIOT/stack-manuca-os/master/docs/manuca_os_logo_800_600.png" alt="" class="inline"/> </div><p><a href="https://govtechsiot.github.io/stack-manuca-os/"><img src="https://codedocs.xyz/doxygen/doxygen.svg" alt="" style="pointer-events: none;" class="inline"/></a></p>
-<h2>Introduction</h2>
-<p>MANUCA OS is a functional real-time operating system for sensor node developers to swiftly build upon using the MANUCA DK, and publish sensor measure points to the government cloud via DECADA Cloud.</p>
-<p>For more information, visit <a href="https://siot.gov.sg/tech-stack/manuca/overview/">https://siot.gov.sg/tech-stack/manuca/overview/</a></p>
+<div class="textblock"><p><a class="anchor" id="md_README"></a><code>stack-manuca-nn-people-counting</code> is a computer vision application written using the MANUCA OS tech stack. It uses an external camera module to capture images, performs machine-learning-based inference to count the number of people in the image, and then publishes the counts to the government-supported DECADA Cloud service. It is written in C++ for efficiency and is suitable for deployment on edge devices.</p>
+<p>For more information about MANUCA OS, click <a href="https://siot.gov.sg/tech-stack/manuca/overview/">here</a>. A detailed user manual is available <a href="https://siot.gov.sg/files/MANUCA_User_Manual_V1.pdf">here</a>.</p>
 <hr  />
- <h2>Development Team</h2>
+ <h1><a class="anchor" id="autotoc_md4"></a>
+Development Team</h1>
 <ul>
+<li>Daniel Tan (<a href="#" onclick="location.href='mai'+'lto:'+'dtc'+'h1'+'997'+'@s'+'tan'+'fo'+'rd.'+'ed'+'u'; return false;">dtch1<span style="display: none;">.nosp@m.</span>997@<span style="display: none;">.nosp@m.</span>stanf<span style="display: none;">.nosp@m.</span>ord.<span style="display: none;">.nosp@m.</span>edu</a>)</li>
 <li>Lau Lee Hong (<a href="#" onclick="location.href='mai'+'lto:'+'lau'+'_l'+'ee_'+'ho'+'ng@'+'te'+'ch.'+'go'+'v.s'+'g'; return false;">lau_l<span style="display: none;">.nosp@m.</span>ee_h<span style="display: none;">.nosp@m.</span>ong@t<span style="display: none;">.nosp@m.</span>ech.<span style="display: none;">.nosp@m.</span>gov.s<span style="display: none;">.nosp@m.</span>g</a>)</li>
-<li>Yap Zi Qi (<a href="#" onclick="location.href='mai'+'lto:'+'yap'+'_z'+'i_q'+'i@'+'tec'+'h.'+'gov'+'.s'+'g'; return false;">yap_z<span style="display: none;">.nosp@m.</span>i_qi<span style="display: none;">.nosp@m.</span>@tech<span style="display: none;">.nosp@m.</span>.gov<span style="display: none;">.nosp@m.</span>.sg</a>)</li>
-<li>Goh Kok Boon (<a href="#" onclick="location.href='mai'+'lto:'+'goh'+'_k'+'ok_'+'bo'+'on@'+'te'+'ch.'+'go'+'v.s'+'g'; return false;">goh_k<span style="display: none;">.nosp@m.</span>ok_b<span style="display: none;">.nosp@m.</span>oon@t<span style="display: none;">.nosp@m.</span>ech.<span style="display: none;">.nosp@m.</span>gov.s<span style="display: none;">.nosp@m.</span>g</a>)</li>
 </ul>
 <hr  />
- <h2>System Requirements for Development</h2>
+ <h1><a class="anchor" id="autotoc_md6"></a>
+System Requirements for Development</h1>
 <ul>
 <li>Windows, MacOS or Ubuntu 18.04</li>
 </ul>
 <hr  />
- <h2>Quick Start</h2>
+ <h1><a class="anchor" id="autotoc_md8"></a>
+Hardware Requirements</h1>
 <ul>
+<li>ArduCAM 2MP Plus OV2640 camera module</li>
+<li><a href="https://www.siot.gov.sg/starter-kit">GovTech IoT Starter Kit</a> or similar ARM Cortex-M7 boards</li>
+</ul>
+<hr  />
+ <h1><a class="anchor" id="autotoc_md10"></a>
+Quick Start</h1>
+<ul>
+<li>Connect ArduCAM module to MANUCA OS board through the SPI2, I2C2 ports.</li>
 <li>Set up the development environment (<a href="https://siot.gov.sg/starter-kit/set-up-your-software-env/">https://siot.gov.sg/starter-kit/set-up-your-software-env/</a>)</li>
-<li>Clone the repository onto local disk: <code>git clone --recurse-submodules <a href="https://github.com/GovTechSIOT/stack-manuca-os.git">https://github.com/GovTechSIOT/stack-manuca-os.git</a></code></li>
-<li>Toggle operating modes in mbed_app.json</li>
+<li>Clone the repository onto local disk: <code>git clone --recurse-submodules TODO_write_final_github_link</code></li>
+<li>Configure DECADA credentials (<a href="https://www.siot.gov.sg/starter-kit/build-and-flash-sw/#InputCredentials">https://www.siot.gov.sg/starter-kit/build-and-flash-sw/#InputCredentials</a>)</li>
+<li>[Optionally] set trace level to debug in <code>mbed_app_.json</code>. ("mbed-trace.max-level" : ~~"TRACE_LEVEL_INFO"~~ "TRACE_LEVEL_DEBUG")</li>
 <li>Compile the binary (<a href="https://siot.gov.sg/starter-kit/build-and-flash-sw/">https://siot.gov.sg/starter-kit/build-and-flash-sw/</a>)</li>
 <li>Copy the binary file (.bin) into the MANUCA DK via programmer (eg. stlink v3).</li>
 </ul>
 <hr  />
- <h2>Documentation and References</h2>
-<ul>
-<li>Technical Instruction Manual: <a href="https://siot.gov.sg/starter-kit/introduction/">https://siot.gov.sg/starter-kit/introduction/</a></li>
-<li>MANUCA DK User Manual: <a href="https://siot.gov.sg/files/MANUCA_User_Manual_V1.pdf">https://siot.gov.sg/files/MANUCA_User_Manual_V1.pdf</a></li>
-</ul>
+ <h1><a class="anchor" id="autotoc_md12"></a>
+Documentation</h1>
+<h2><a class="anchor" id="autotoc_md13"></a>
+Hardware Setup</h2>
+<p>The ArduCAM module must be connected to the MANUCA DK board by connecting the SPI and I2C interfaces. A detailed guide on how to connect the pins can be found <a class="el" href="md_docs__pins.html">here</a></p>
+<h2><a class="anchor" id="autotoc_md14"></a>
+Performing computer vision</h2>
+<p>stack-manuca-nn-people-counting uses a convolutional neural network (CNN) to perform inference. The CNN is trained in Python using Tensorflow. It takes an input of a 96 x 96 grayscale image and predicts a binary value of whether the image contains a person or not. The architecture used is a MobileNetV2 and the model is trained on the Visual Wake Words dataset, an open-source image benchmark for edge machine learning applications. In total, our model has 300kb of parameters (stored in flash) and requires an additional 100kb of static computation buffers (which require RAM).</p>
+<h2><a class="anchor" id="autotoc_md15"></a>
+TFLM Model abstraction</h2>
+<p>We provide a <code>sensors-lib/camera/model/TFLM_Model.cpp</code> class as a high-level, object-oriented wrapper aronud the base Tensorflow Lite for Microcontrollers C library. Using the neural network for prediction is as simple as <code>output_buffer = model.RunInference(input_buffer)</code>.</p>
+<h2><a class="anchor" id="autotoc_md16"></a>
+Image, Pixel abstraction</h2>
+<p>A small amount of image preprocessing is required to get the input images into the correct size and image format for the neural network. The <a class="el" href="class_image.html" title="Used to perform various image processing operations on raw byte data. GetBuffer() method provides acc...">Image</a> and <a class="el" href="class_pixel.html" title="Used to describe pixel formats of raw uint8_t* buffers and convert between formats....">Pixel</a> classes handle this resizing and reformatting in an extensible, object-oriented way. The documented source code is found in <code>sensors-lib/camera/image/Image.cpp</code> and <code>sensors-lib/camera/image/Pixel.cpp</code> respectively.</p>
+<h2><a class="anchor" id="autotoc_md17"></a>
+Person counting logic</h2>
+<p>The application divides an image into a grid of squares (with configurable length), uses some hand-written image processing code to resize each square to 96 x 96, and predicts whether that square contains a person or not. The total count prediction is the number of positive detections.</p>
 <hr  />
- <h2>License and Contributions</h2>
+ <h1><a class="anchor" id="autotoc_md19"></a>
+Extending the Code</h1>
+<h2><a class="anchor" id="autotoc_md20"></a>
+Using a different camera module</h2>
+<p>The stack-manuca-nn-people-counting code uses an ArduCAM 2MP Plus OV2640, but this can be replaced with any camera module that supports the SPI2 and I2C communication protocols. To use stack-manuca-nn-people-counting with a different camera module, you will need to write or install an appropriate driver for performing low-level read and write operations to the camera module. The stack-manuca-nn-people-counting driver code is found in <code>lib/ArduCAM/ArduCAM/</code> and is adapted from the <a href="https://github.com/ArduCAM/Arduino/tree/master/ArduCAM">official implementation</a>. It has been modified to work with Mbed instead of Arduino or ESP32.</p>
+<p>This driver can be interfaced with the core MANUCA OS code by writing a high-level wrapper that implements the <a class="el" href="class_sensor_type.html" title="Used as an interface between SensorManager class and individual Sensor Drivers.">SensorType</a> interface found in <code><a class="el" href="sensor__type_8h_source.html">sensors-lib/sensor_type.h</a></code>. The <a class="el" href="class_sensor_type.html" title="Used as an interface between SensorManager class and individual Sensor Drivers.">SensorType</a> subclass used by stack-manuca-nn-people-counting is found in <code>sensors_lib/camera/Ardu_Camera.h</code>. An example of how to use this subclass in the main application can be found in <code>threads/sensor_thread.cpp</code>.</p>
+<h2><a class="anchor" id="autotoc_md21"></a>
+Modifying default values</h2>
+<p>The application uses some default parameters for controlling computer vision. The parameters are hardcoded in <code><a class="el" href="_ardu___camera_8h_source.html">sensors-lib/camera/Ardu_Camera.h</a></code> as static class variables.</p>
+<ul>
+<li>Sliding window length controls the size of the square. The default value of 80 is set to work with a 320x240 RGB QVGA camera image format. We recommend tuning this parameter for the specific deployment use-case so that each square fits exactly one person.</li>
+<li>Tensor arena size determines how much memory is allocated for the intermediate computations used by the model. Allocating too little memory will result in a out-of-memory error. Detailed instructions for determining the required buffer size are included in the source code.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md22"></a>
+Using a different model</h2>
+<p>The model data is contained as a byte array <code>g_person_detect_model_data</code> in <code>sensors-lib/camera/model_data/person_detection_int8/model_data.cc</code>. To replace the model:</p>
+<ol type="1">
+<li>Create a folder (e.g. <code>my_folder</code>) in <code>sensors-lib/camera/model_data</code></li>
+<li>Add the trained and exported Tensorflow model as a byte array (e.g <code>my_model_data</code>) in <code>sensors-lib/camera/model_data/my_folder/model_data.cc</code>.</li>
+<li>In <code>sensors-lib/camera/Ardu_Camera.cpp</code>, include the new model data and replace the old model data: <div class="fragment"><div class="line"># include &quot;camera/model_data/my_folder/model_data.h&quot;    // &lt;--- This line was changed</div>
+<div class="line"> </div>
+<div class="line">Ardu_Camera::Ardu_Camera(PinName cam_cs, </div>
+<div class="line">                PinName cam_spi_mosi, PinName cam_spi_miso, PinName cam_spi_sclk,</div>
+<div class="line">                PinName cam_i2c_data, PinName cam_i2c_sclk):</div>
+<div class="line">    image_(cam_img_height, cam_img_width, cam_img_fmt, camera_buf),   </div>
+<div class="line">    arducam_(cam_cs, </div>
+<div class="line">        cam_spi_mosi, cam_spi_miso, cam_spi_sclk, </div>
+<div class="line">        cam_i2c_data, cam_i2c_sclk, OV2640, RAW),</div>
+<div class="line">    model(my_model_data,                // &lt;--- This line was also changed</div>
+<div class="line">        tensor_arena_size, </div>
+<div class="line">        tensor_arena,</div>
+<div class="line">        false)</div>
+</div><!-- fragment --></li>
+</ol>
+<p>If using a different model architecture, you may also need to configure <code>Ardu_Camera::model_arena_size</code>. Detailed instructions for determining the required buffer size are included in <code><a class="el" href="_ardu___camera_8h_source.html">sensors-lib/camera/Ardu_Camera.h</a></code>.</p>
+<p>The code to train a TensorFlow model in Python, quantize, and export it to a C format is available here: <a href="https://github.com/dtch1997/tf-detect">https://github.com/dtch1997/tf-detect</a></p>
+<h2><a class="anchor" id="autotoc_md23"></a>
+Using a different approach</h2>
+<p>The approach used in this work differs from that used in mainstream crowd counting literature. We also attempted an object-detection based framework with a Mobilenet-SSD architecture. However, the architectures trained with that approach were either too large to fit on the microcontroller, or did not perform well at object detection. Nonetheless, it is possible that future innovations will make this approach more practical. We welcome third-party contributions in this regard.</p>
+<hr  />
+ <h1><a class="anchor" id="autotoc_md25"></a>
+License and Contributions</h1>
 <p>The software is provided under the Apache-2.0 license (see <a href="https://www.siot.gov.sg/starter-kit/terms-and-conditions/">https://www.siot.gov.sg/starter-kit/terms-and-conditions/</a>). Contributions to this project repository are accepted under the same license. Please see <a class="el" href="md__c_o_n_t_r_i_b_u_t_i_n_g.html">contributing.md</a> for more information. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->

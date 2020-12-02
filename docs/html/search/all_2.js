@@ -1,10 +1,15 @@
 var searchData=
 [
-  ['data_20structure_20conversions_14',['Data Structure Conversions',['../group__conversions.html',1,'']]],
-  ['decada_20manager_20v2_15',['DECADA Manager V2',['../group__decada__manager__v2.html',1,'']]],
-  ['decadaserviceresponse_16',['DecadaServiceResponse',['../group__trace__manager.html#ga94ae5c7f6d4035d0a89a8ffd18507614',1,'DecadaServiceResponse(std::string service_id, std::string msg_id, std::string msg):&#160;trace_manager.cpp'],['../group__trace__manager.html#ga94ae5c7f6d4035d0a89a8ffd18507614',1,'DecadaServiceResponse(std::string trace_level, std::string msg, std::string msg_id):&#160;trace_manager.cpp']]],
-  ['device_20uuid_17',['Device UUID',['../group__device__uuid.html',1,'']]],
-  ['disable_18',['Disable',['../class_scd30.html#a1148682bc79aac4a989db46916cec2f8',1,'Scd30::Disable()'],['../class_sps30.html#a7908ab5f4515e789647b20d900a760ef',1,'Sps30::Disable()'],['../class_tmp75.html#a7aebfd659326ee11f809b607a669fed6',1,'Tmp75::Disable()']]],
-  ['distributecontrolmessage_19',['DistributeControlMessage',['../group__param__control.html#gab50f966a50fe75218f940f8cf71aedfb',1,'DistributeControlMessage(std::string param, int value, std::string msg_id, std::string endpoint_id):&#160;param_control.cpp'],['../group__param__control.html#gab50f966a50fe75218f940f8cf71aedfb',1,'DistributeControlMessage(std::string param, int value, std::string msg_id, std::string endpoint_id):&#160;param_control.cpp']]],
-  ['doubletochar_20',['DoubleToChar',['../group__conversions.html#gaf1caf87ea665b532c19ee4c1e2f64e0d',1,'DoubleToChar(char *str, double v, int decimal_digits):&#160;conversions.cpp'],['../group__conversions.html#gaf1caf87ea665b532c19ee4c1e2f64e0d',1,'DoubleToChar(char *str, double v, int decimalDigits):&#160;conversions.cpp']]]
+  ['certificateauthoritypemformatter_3',['CertificateAuthorityPEMFormatter',['../group__crypto__engine__v2.html#ga219b5e2dd379511642d05b0b5cd2d8fa',1,'CryptoEngineV2']]],
+  ['checkentityavailability_4',['CheckEntityAvailability',['../group__sensor__profile.html#ga36cad1782cbb42281e1bd991bbc0b9cf',1,'SensorProfile']]],
+  ['clearentitylist_5',['ClearEntityList',['../group__sensor__profile.html#gac9b6b0063310768e04efbf532019b257',1,'SensorProfile']]],
+  ['communications_20network_6',['Communications Network',['../group__communications__network.html',1,'']]],
+  ['confignetworkinterface_7',['ConfigNetworkInterface',['../group__communications__network.html#ga2fdede042ae64f28541e81f502a35b83',1,'ConfigNetworkInterface(NetworkInterface *&amp;network):&#160;communications_network.cpp'],['../group__communications__network.html#ga2fdede042ae64f28541e81f502a35b83',1,'ConfigNetworkInterface(NetworkInterface *&amp;network):&#160;communications_network.cpp']]],
+  ['configure_8',['Configure',['../class_tmp75.html#a3aae70f508b0b78b97a77e66d2c49202',1,'Tmp75']]],
+  ['connect_9',['Connect',['../group__decada__manager__v2.html#gab2fc0d96e14433bc018c358f11f7fd12',1,'DecadaManagerV2']]],
+  ['convertdatatostring_10',['ConvertDataToString',['../class_sensor_type.html#a71e4418917a4370745dd671503e524b3',1,'SensorType']]],
+  ['convertrawtimetoiso8601time_11',['ConvertRawTimeToIso8601Time',['../group__time__engine.html#ga0dc54b25fdf56994708caad7a9d60802',1,'ConvertRawTimeToIso8601Time(time_t raw_time):&#160;time_engine.cpp'],['../group__time__engine.html#ga0dc54b25fdf56994708caad7a9d60802',1,'ConvertRawTimeToIso8601Time(time_t raw_time):&#160;time_engine.cpp']]],
+  ['createdecadaresponse_12',['CreateDecadaResponse',['../group__trace__manager.html#ga3339fde99cb70523de3a038df49be2f3',1,'CreateDecadaResponse(std::string msg, std::string msg_id):&#160;trace_manager.cpp'],['../group__trace__manager.html#ga3339fde99cb70523de3a038df49be2f3',1,'CreateDecadaResponse(std::string msg, std::string):&#160;trace_manager.cpp']]],
+  ['crypto_20engine_20v2_13',['Crypto Engine V2',['../group__crypto__engine__v2.html',1,'']]],
+  ['contributing_20to_20manuca_20os_14',['Contributing to MANUCA OS',['../md__c_o_n_t_r_i_b_u_t_i_n_g.html',1,'']]]
 ];
